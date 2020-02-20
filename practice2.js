@@ -12,7 +12,7 @@ $(function(){
 
 
 
-	})
+	});
 	
 
 		
@@ -28,6 +28,7 @@ $(function(){
 
 	})
 });
+
 
 
  function setCursorPosition(pos, e) {
@@ -57,20 +58,19 @@ $(function(){
     i < matrix.length && matrix != this.placeholder ? i++ : i = matrix.indexOf("_");
     setCursorPosition(i, this)
   }
-  window.addEventListener("DOMContentLoaded", function() {
-    var input = document.getElementsByTagName("input")[4];
-    input.addEventListener("input", mask, false);
-    input.focus();
-    setCursorPosition(3, input);
-  });
+  window.addEventListener("DOMContentLoaded", () =>{
+    var input4 = document.getElementsByTagName("input")[4];
+    input4.addEventListener("input", mask, false);
+    input4.focus();
+    setCursorPosition(3, input4);
 
-   window.addEventListener("DOMContentLoaded", function() {
     var input = document.getElementsByTagName("input")[1];
     input.addEventListener("input", mask, false);
     input.focus();
     setCursorPosition(3, input);
   });
 
+   
 
 
 
